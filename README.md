@@ -13,3 +13,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## For this project to be functional you must also clone the server repository.
 [Clone this repository for the back-end](https://github.com/sbner/bitcoin-address-server "bitcoin-address-backend")
+
+In the server repository, you can run:
+
+### `go run main.go`
