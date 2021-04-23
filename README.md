@@ -17,3 +17,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 In the server repository, you can run:
 
 ### `go run main.go`
+Runs the server on the localhost:8000.
