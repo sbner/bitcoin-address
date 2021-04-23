@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Styles
+
 const NavBar = styled.div`
     align-items: center;
     background-color: transparent;
@@ -24,6 +26,8 @@ const Link = styled.a`
     }
 `
 
+// Component Templates
+
 const Nav = () => {
     return ( 
         <NavBar>
@@ -31,8 +35,7 @@ const Nav = () => {
                 LOGO
             </div>
             <div>
-                <Link href="h">Link</Link>
-                <Link href="h">Link</Link>
+                <Link href="h">About</Link>
             </div>
         </NavBar>
      );

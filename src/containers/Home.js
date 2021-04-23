@@ -1,8 +1,10 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import Nav from '../components/Nav'
-import LadyBit from '../img/lady-bitcoin-resized.jpg'
-import Form from '../components/Form'
+import Nav from '../components/Nav';
+import LadyBit from '../img/lady-bitcoin-resized.jpg';
+import TheForm from '../components/TheForm';
+
+// Styles
 
 const HomeDiv = styled.div`
     background-image: url(${LadyBit});
@@ -15,14 +17,22 @@ const HomeDiv = styled.div`
 `;
 
 const Main = styled.div`
-    color: #bfe1e3;
     padding: 1rem 8%;
+    color: #bfe1e3;
+    @media(max-width: 550px) {
+        padding: .5rem 8%;
+    }
 `;
 
 const H1 = styled.h1`
+    margin: 2rem 0;
     font-size: 3rem;
     max-width: 100%;
     width: 700px;
+    @media(max-width: 550px) {
+        margin: .5rem 0;
+        font-size: 2.5rem;
+    }
 `;
 
 
@@ -34,16 +44,20 @@ const blinker = keyframes`
 
 const Blink = styled.span`
     animation: ${blinker} 2s linear infinite;
-    `;
+`;
+
+// Component Template
 
 const Home = () => {
     return ( 
         <HomeDiv>
             <Nav />
             <Main>
-                <H1>Sit aliqua id magna nisi dolor anim duis ipsum id proident do<Blink>?</Blink></H1>
-                <Form/>
+                <H1>Quer descobrir quanto foi movimentado em algum endereço bitcoin<Blink>?</Blink></H1>
+                <TheForm />
             </Main>
+            <div>
+            </div>
         </HomeDiv>
      );
 }
